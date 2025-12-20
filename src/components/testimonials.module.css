@@ -1,0 +1,41 @@
+.container {
+    width: 85%;
+    margin: 1rem auto;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.testimonialCard{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #cadb8c;
+    box-shadow: #51524750 0px 0px 10px;
+    border-radius: 15px;
+    padding: 1.5rem;
+    margin: 1rem;
+    width: 100%;
+    text-align: center;
+}
+
+.testimonialImage {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+
+.testimonialCard p{
+    word-break: break-all;
+}
+
+
+@media (max-width: 768px) {
+    .testimonialCard{
+        width: auto;
+    }
+}

@@ -1,0 +1,76 @@
+.container {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.howTitle{
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.howText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    line-height: 2.3rem;
+    margin: 0 0 2% 0;
+}
+
+.howCard1 {  
+  width: 85%;
+  margin: 1rem auto;
+  border-radius: 15px;
+  background-color: #ffcff1;
+  box-shadow: #51524750 0px 0px 10px;
+}
+
+.howContainer {
+  width: 85%;
+  min-height: 40vh;
+  margin: auto; 
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.howCard2 {  
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+  background-color: #fffecf;
+  box-shadow: #51524750 0px 0px 10px;
+  min-height: 30vh;
+}
+
+.howCard3 {  
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+  background-color: #e5ffcf;
+  box-shadow: #51524750 0px 0px 10px;
+}
+
+@media (max-width: 768px) {
+
+    .howContainer {
+        flex-direction: column;
+    }
+
+    .howCard3, .howCard2 {  
+        width: 100%;
+        margin-bottom: 1rem;
+        padding: 0 1rem 0 1rem;
+    }
+}

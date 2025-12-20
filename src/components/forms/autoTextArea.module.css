@@ -1,0 +1,19 @@
+.textarea {
+    width: 100%;
+    resize: none;    
+    overflow: hidden; 
+    min-height: 50px; 
+    padding: 0.8rem;
+    border: 1px solid rgb(56, 35, 4);
+    background-color: #feffed93;      
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: inherit;
+    line-height: 1.5;
+    transition: border-color 0.2s, background-color 0.2s;
+  }
+  
+  .textarea:focus {
+    outline: none;
+    background-color: #fff; 
+  }

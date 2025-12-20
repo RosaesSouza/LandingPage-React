@@ -1,0 +1,100 @@
+.container {
+  padding: 3rem;
+  margin: auto;;
+  width: 90%;
+  height: auto;
+  min-height: 65vh; 
+  position: relative;
+  overflow-x: hidden;
+  padding: 2.5rem;
+}
+
+.wall {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-items: center;
+}
+
+.polaroid {
+  position: relative;
+  background: rgb(255, 253, 237);
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+  width: 100%;
+  max-width: 250px;
+  cursor: pointer;
+  border-radius: 4px;
+  z-index: 1; 
+}
+
+.polaroid:hover {
+  transform: rotate(0deg) scale(1.05) !important;
+  z-index: 10;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.imageWrapper {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  background-color: #ddd;
+}
+
+.imageWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pin {
+  width: 80px;
+  height: 25px;
+  background-color: rgba(255, 255, 255, 0.6); 
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 2rem;
+  }
+  
+  .wall {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .polaroid {
+    max-width: 150px;
+  }
+  
+  .imageWrapper {
+    height: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .wall {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 1rem;
+  }
+  
+  .polaroid {
+    max-width: 120px;
+    padding: 0.5rem;
+  }
+  
+  .imageWrapper {
+    height: 120px;
+    margin-bottom: 0.5rem;
+  }
+}
