@@ -13,7 +13,7 @@ export const Navbar = () => {
 
             <div className={styles.navContainer}>
                 <div className={styles.logo}>
-                    <a href="/">OFICINAS CRIATIVAS</a>
+                    <a href="/">Prof. Paloma Rosaes</a>
                 </div>
 
                 <button className={styles.hamburger} onClick={toggleMenu}>
